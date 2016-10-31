@@ -2,10 +2,7 @@
 using System.Collections;
 
 public class enemyNav : MonoBehaviour {
-	/* 
-	 * if the distance between player and enemy is less than the atk space then navigate to player
-	 *
-	 */
+	
 	public AudioClip audio;
 	private bool hasplayed = false;
 	public Canvas cv;
@@ -14,6 +11,7 @@ public class enemyNav : MonoBehaviour {
 	NavMeshAgent nav;
 	// Use this for initialization
 	void Start () {
+		hasplayed = false;
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		nav = GetComponent<NavMeshAgent> ();
 		cv.gameObject.SetActive (false);
@@ -22,17 +20,22 @@ public class enemyNav : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
+		//if the distance between player and enemy is less than the atk space then navigate to player
 
 		if (Vector3.Distance (player.position, transform.position) < atkDist) {
 			nav. SetDestination(player.transform.position);
 		}
 
+		//dont do anything else
+
 		else {
 			return;
 		}
-		Debug.Log (transform.position);
+
 	}
 
+	//if a game object of the tag "player" enters trigger. play the audio clip assigned
 
 	void OnTriggerEnter(Collider Other)
 	{
@@ -44,6 +47,8 @@ public class enemyNav : MonoBehaviour {
 
 
 	}
+
+	// if player and enemy collide, activate game over canvas screen
 
 		void OnCollisionEnter(Collision col )
 	{

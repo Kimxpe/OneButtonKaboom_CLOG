@@ -32413,6 +32413,26 @@ Prefab:
       propertyPath: audio
       value: 
       objectReference: {fileID: 8300000, guid: 5e4b54b521170478990535d606debf98, type: 3}
+    - target: {fileID: 82000010945948000, guid: 4821cd42a0483466f869e5bb22a898f3,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010945948000, guid: 4821cd42a0483466f869e5bb22a898f3,
+        type: 2}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.0166667
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010945948000, guid: 4821cd42a0483466f869e5bb22a898f3,
+        type: 2}
+      propertyPath: MinDistance
+      value: 2.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010945948000, guid: 4821cd42a0483466f869e5bb22a898f3,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 499.24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4821cd42a0483466f869e5bb22a898f3, type: 2}
   m_IsPrefabParent: 0
