@@ -51,7 +51,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010121447030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.116669, y: 0, z: 51.76996}
+  m_LocalPosition: {x: 16.422546, y: -0.77999973, z: -7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -89,8 +89,8 @@ AudioSource:
   Spatialize: 0
   Priority: 0
   DopplerLevel: 2
-  MinDistance: 7.7251587
-  MaxDistance: 14.769257
+  MinDistance: 4.7142334
+  MaxDistance: 10
   Pan2D: -0.06
   rolloffMode: 2
   BypassEffects: 0
@@ -103,6 +103,11 @@ AudioSource:
       value: 1
       inSlope: -1.6925389
       outSlope: -1.6925389
+      tangentMode: 0
+    - time: 0.3685793
+      value: 0.25747198
+      inSlope: -1.0028481
+      outSlope: -1.0028481
       tangentMode: 0
     - time: 1
       value: 0
