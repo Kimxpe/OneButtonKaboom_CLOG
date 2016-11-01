@@ -30,8 +30,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SampleScenes/Scenes/RollerBall.unity
   - enabled: 1
-    path: Assets/Scenes/End.unity
-  - enabled: 1
     path: Assets/Scenes/start screen.unity
   - enabled: 1
     path: Assets/Scenes/OneButtonKaboomFAM.unity
+  - enabled: 1
+    path: Assets/Scenes/End.unity
